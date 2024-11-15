@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
         int number = atoi(argv[i]);
 
         node *n = malloc(sizeof(node));
-        if(n!=NULL){
+        if(n==NULL){
             free(n);
             printf("No number to input");
             return 1;
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
     node *ptr = list;
     while (ptr != NULL)
     {
-        printf("%i", ptr->number);
+        printf("%i \n", ptr->number);
         ptr = ptr->next;
     }
 }
