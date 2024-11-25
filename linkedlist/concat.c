@@ -13,13 +13,19 @@ void printlist(Node *head);
 
 int main(void)
 {
+
+    // Creating nodes of linkedlist
     Node *head1 = createNode(3);
     head1->next = createNode(4);
     head1->next->next = createNode(5);
 
+
+    // Creating second linkedlist
     Node *head2= createNode(6);
     head2->next = createNode(7);
 
+
+    //Concatinating two linkedlists
     Node *concatHead = concat(head1, head2);
     printlist(concatHead);
 }
