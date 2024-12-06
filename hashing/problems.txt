@@ -1,0 +1,8 @@
+Hashing and collision
+
+Create a hash function that does the following:
+    Takes a string input(password).
+    Takes out the ASCII value for each characters. 
+    Adds 5 to each value.
+    Adds a random prefix of 3 letters. 
+    Returns a joined string and a dictionary.
